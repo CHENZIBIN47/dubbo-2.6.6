@@ -16,6 +16,9 @@
  */
 package com.alibaba.dubbo.demo;
 
+import com.alibaba.dubbo.common.extension.SPI;
+
+@SPI
 public interface DemoService {
 
     String sayHello(String name);
