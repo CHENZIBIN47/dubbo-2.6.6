@@ -1,0 +1,3 @@
+demo1 = com.alibaba.dubbo.demo.provider.DemoServiceImpl
+demo2 = com.alibaba.dubbo.demo.provider.Demo2ServiceImpl
+demo3 = com.alibaba.dubbo.demo.provider.Demo3ServiceImpl
