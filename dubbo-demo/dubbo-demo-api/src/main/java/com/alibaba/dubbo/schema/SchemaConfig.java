@@ -28,7 +28,7 @@ public class SchemaConfig implements ApplicationListener<ContextRefreshedEvent>{
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event) {
 		//实现了ApplicationListener spring容器加载bean完成后进行初始化调用onApplicationEvent()
-		System.out.println("init");
+		System.out.println("init"); 
 	}
 	
 	
