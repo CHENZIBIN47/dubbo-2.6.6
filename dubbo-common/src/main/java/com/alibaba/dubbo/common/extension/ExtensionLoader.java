@@ -672,7 +672,7 @@ public class ExtensionLoader<T> {
                         + cachedAdaptiveClass.getClass().getName()
                         + ", " + clazz.getClass().getName());
             }
-        } else if (isWrapperClass(clazz)) {
+        } else if (isWrapperClass(clazz)) {//当type(接口) 没有  @adaptive注解 并且有type为参数的构造函数 dubbo aop 例如ProtocolFilterWrapper 和 ProtocolListenerWrapper
             Set<Class<?>> wrappers = cachedWrapperClasses;
             if (wrappers == null) {
                 cachedWrapperClasses = new ConcurrentHashSet<Class<?>>();
